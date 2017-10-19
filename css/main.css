@@ -1,5 +1,5 @@
 html {
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
 }
 
 h1 {
@@ -27,12 +27,94 @@ svg {
   top: 160px;
 }
 
+#narwhal-body {
+  animation: around 1s linear forwards;
+  stroke-dasharray: 1950px;
+  stroke-dashoffset: 1950px;
+}
+
+#narwhal-eye {
+  animation: come-in .5s linear forwards;
+  animation-delay: .5s;
+  opacity: 0;
+}
+
+#rainbow-violet {
+  animation: shine 4s linear forwards;
+  stroke-dasharray: 9800px;
+  stroke-dashoffset: 9800px;
+  animation-delay: .5s;
+}
+
+#rainbow-indigo {
+  animation: shine 4s linear forwards;
+  stroke-dasharray: 9800px;
+  stroke-dashoffset: 9800px;
+  animation-delay: .5s;
+}
+
+#rainbow-blue {
+  animation: shine 4s linear forwards;
+  stroke-dasharray: 9800px;
+  stroke-dashoffset: 9800px;
+  animation-delay: .5s;
+}
+
+#rainbow-green {
+  animation: shine 4s linear forwards;
+  stroke-dasharray: 9800px;
+  stroke-dashoffset: 9800px;
+  animation-delay: .5s;
+}
+
+#rainbow-yellow {
+  animation: shine 4s linear forwards;
+  stroke-dasharray: 9800px;
+  stroke-dashoffset: 9800px;
+  animation-delay: .5s;
+}
+
+#rainbow-orange {
+  animation: shine 4s linear forwards;
+  stroke-dasharray: 9800px;
+  stroke-dashoffset: 9800px;
+  animation-delay: .5s;
+}
+
+#rainbow-red {
+  animation: shine 4s linear forwards;
+  stroke-dasharray: 9800px;
+  stroke-dashoffset: 9800px;
+  animation-delay: .5s;
+}
+
+@keyframes shine {
+
+  0% {
+    stroke-dashoffset: 9800px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes around {
+
+  0% {
+    stroke-dashoffset: 1950px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
 @keyframes come-in {
 
   0% {
     opacity: 0;
-    filter: blur(10px);
+    filter: blur(5px);
   }
 
   100% {
