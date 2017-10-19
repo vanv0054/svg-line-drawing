@@ -1,3 +1,41 @@
 html {
   font-family: 'Unica One', cursive;
 }
+
+h1 {
+  animation: come-in .5s linear forwards;
+  transform-origin: left center;
+}
+
+h2 {
+  animation: come-in .5s linear forwards;
+  transform-origin: left center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes come-in {
+
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
